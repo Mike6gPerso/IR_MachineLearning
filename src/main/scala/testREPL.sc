@@ -16,4 +16,5 @@ object Firebase {
   def ref(path: String): DatabaseReference = database.getReference(path)
 }
 
-val ref = Firebase.ref("/entreprises")
+val ref = new Firebase
+ref.ref("/entreprises")
